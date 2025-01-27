@@ -45,7 +45,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed w-[94%] md:w-[98%] top-4 z-50 py-4 md:px-9 px-4 border-none transition-all duration-700 rounded-lg "
+      className="fixed w-[94%] md:w-[98%] top-4 z-50 py-6 md:px-12 px-4 transition-all duration-700 rounded-lg "
     >
       <header className="w-full ">
         <nav className="flex items-center justify-between">
