@@ -29,7 +29,6 @@ const items = [
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-
 ];
 
 const Gallery = () => {
