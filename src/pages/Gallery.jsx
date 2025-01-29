@@ -2,33 +2,31 @@ import React from "react";
 import GridMotion from "../sections/GridMotion";
 import Overlay from "../sections/Overlay";
 import Meet1 from "../../public/images/ecellMeet1.jpg";
+import Shark from "../../public/images/sharktank.jpg";
+import Next from "../../public/images/nextniche.jpg";
 
 const items = [
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
-  <img src={Meet1} alt="meet1" className="h-full w-full object-fill"/>,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
 ];
 
 const Gallery = () => {
