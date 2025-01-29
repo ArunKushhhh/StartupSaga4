@@ -1,4 +1,4 @@
-import clsx from "clsx";
+
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
@@ -45,7 +45,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed w-[94%] md:w-[98%] top-4 z-50 py-6 md:px-12 px-4 transition-all duration-700 rounded-lg "
+      className="fixed w-[94%] md:w-[98%] top-4 z-50 py-6 md:px-12 px-4 transition-all duration-700 rounded-lg  max-w-[80em]"
     >
       <header className="w-full ">
         <nav className="flex items-center justify-between">

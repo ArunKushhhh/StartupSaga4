@@ -3,6 +3,7 @@ import Hero from "../sections/Hero";
 import Testimonials from "../sections/Testimonials";
 import Gallery from "./Gallery";
 import SponsorUs from "../sections/SponsorUs";
+import SpotlightText from "../sections/Footer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Testimonials />
       <Gallery />
       <SponsorUs />
+      <SpotlightText/>
     </div>
   );
 };
