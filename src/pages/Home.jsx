@@ -4,6 +4,7 @@ import Testimonials from "../sections/Testimonials";
 import Gallery from "./Gallery";
 import SponsorUs from "../sections/SponsorUs";
 import SpotlightText from "../sections/Footer";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Gallery />
       <SponsorUs />
       <SpotlightText/>
+      <Footer />
     </div>
   );
 };
