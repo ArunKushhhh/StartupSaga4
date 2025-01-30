@@ -2,6 +2,7 @@ import React from "react";
 import TestCard from "../components/TestCard";
 import Stroke from "../components/Stroke";
 import Stats from "../components/Stats";
+import ClickSpark from "../components/ClickSpark";
 
 const Testimonials = () => {
   return (
