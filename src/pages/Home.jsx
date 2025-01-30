@@ -3,6 +3,7 @@ import Hero from "../sections/Hero";
 import Testimonials from "../sections/Testimonials";
 import Gallery from "./Gallery";
 import SponsorUs from "../sections/SponsorUs";
+import SpotlightText from "../sections/Footer";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Testimonials />
       <Gallery />
       <SponsorUs />
+      <SpotlightText/>
       <Footer />
     </div>
   );
