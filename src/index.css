@@ -6,7 +6,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #001121, #04060C 100%);
+  background: linear-gradient(to bottom, #001223 33%, #04060C 100%);
 }
 
 ::-webkit-scrollbar{
