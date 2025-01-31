@@ -67,9 +67,9 @@ const Footer = () => {
               onClick={() =>
                 (window.location.href = "mailto:ecell@aitpune.edu.in")
               }
-              className="flex gap-3 bg-red-600 py-[10px] px-6 text-xl rounded-full"
+              className="flex gap-3 font-semibold bg-red-600 py-[10px] px-6 text-xl rounded-full"
             >
-              Submit
+              Mail Us
               <img src={Send} alt="email" />
             </button>
           </div>
