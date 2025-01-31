@@ -17,11 +17,11 @@ export default function SpotlightText() {
   return (
     <div
       ref={containerRef}
-      className="flex justify-center items-center min-h-52 text-[150px] font-bold relative overflow-hidden  cursor-default"
+      className="flex justify-center items-center min-h-56 text-[150px] font-bold relative overflow-hidden  cursor-default"
       onMouseMove={handleMouseMove}
     >
       <div
-        className="absolute text-7xl md:text-[256px] font-['inter'] inset-0 flex justify-center items-center text-opacity-30 text-gray-600 bg-clip-text"
+        className="absolute text-7xl md:text-[15vw] font-['inter'] inset-0 flex justify-center items-center text-opacity-20 text-gray-600 bg-clip-text"
         style={{
           backgroundImage: `url('/noise.svg')`,
           backgroundSize: "300px 300px",
@@ -30,10 +30,10 @@ export default function SpotlightText() {
         Startup Saga
       </div>
       <div
-        className="absolute text-7xl md:text-[256px] font-['inter'] inset-0 flex justify-center items-center bg-gradient-to-t from-blue-500 to-pink-500  text-transparent bg-clip-text footer-text"
+        className="absolute text-7xl md:text-[15vw] font-['inter'] inset-0 flex justify-center items-center bg-gradient-to-t from-blue-500 to-pink-500  text-transparent bg-clip-text footer-text "
         style={{
-          WebkitMaskImage: `radial-gradient(circle 120px at ${pos.x} ${pos.y}, white 20%, transparent 80%)`,
-          maskImage: `radial-gradient(circle 120px at ${pos.x} ${pos.y}, white 20%, transparent 80%)`,
+          WebkitMaskImage: `radial-gradient(circle 120px at ${pos.x} ${pos.y}, white 10%, transparent 80%)`,
+          maskImage: `radial-gradient(circle 120px at ${pos.x} ${pos.y}, white 10%, transparent 80%)`,
         }}
       >
         Startup Saga
