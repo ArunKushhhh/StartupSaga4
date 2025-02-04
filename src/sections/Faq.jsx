@@ -57,7 +57,7 @@ const Faq = () => {
         ))}
       </div>
 
-      <div className="w-1/3 flex flex-col justify-center items-center gap-6">
+      <div className="md:w-1/3 flex flex-col justify-center items-center gap-6">
         <div className="text-xl text-white">
             Do you have any other queries? <span className="text-red-600">Mail Us!</span>
         </div>
