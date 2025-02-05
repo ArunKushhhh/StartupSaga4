@@ -1,4 +1,5 @@
 import React from 'react'
+import Ticket from '../components/Ticket'
 
 const SponsorUs = () => {
   return (
@@ -6,7 +7,7 @@ const SponsorUs = () => {
        <div className="uppercase text-center text-6xl md:text-9xl font-['shakuro'] text-white">
         Sponsor Us
       </div>
-      
+      <Ticket />
     </div>
   )
 }
