@@ -5,11 +5,13 @@ import Gallery from "./Gallery";
 import SponsorUs from "../sections/SponsorUs";
 import Footer from "../sections/Footer";
 import Faq from "../sections/Faq";
+import Timeline from "../sections/Timeline";
 
 const Home = () => {
   return (
     <div className="flex flex-col gap-[150px]">
       <Hero />
+      <Timeline />
       <Testimonials />
       <Faq />
       <SponsorUs />

@@ -8,11 +8,11 @@ const links = ["Instagram", "Facebook", "Twitter", "LinkedIn"];
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-24 justify-start items-center min-h-32">
+    <div className="flex flex-col gap-24 justify-start items-center">
       {/* Navigation menu */}
-      <div className="flex justify-between items-center w-full px-16 mt-32">
+      <div className="flex justify-between md:items-center w-full px-4 md:px-16 mt-32">
         <div className="flex gap-6 h-full items-center">
-          <div className="hidden md:block">
+          <div className="md:block flex flex-col md:flex-row gap-6">
             {footerItems.map((item, index) => (
               <a
                 key={index}
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-6 h-full items-center">
-          <div className="hidden md:block">
+          <div className="flex flex-col md:flex-row gap-6">
             {links.map((item, index) => (
               <a
                 key={index}
@@ -40,9 +40,9 @@ const Footer = () => {
       </div>
 
       {/* Contact Info and map */}
-      <div className="min-h-32 text-white w-full flex justify-between px-16">
+      <div className="min-h-32 text-white w-full flex flex-col md:flex-row justify-between gap-16 px-4 md:px-16">
         {/* contact info */}
-        <div className="flex w-1/3 flex-col gap-10 justify-center items-center">
+        <div className="flex w-full md:w-1/3 flex-col gap-10 justify-center items-center">
           {/* heading */}
           <div className="font-['shakuro'] text-hover-btn text-4xl ">
             Contact Us
@@ -60,14 +60,14 @@ const Footer = () => {
           </div>
           {/* mail */}
           <div className="bg-white w-full rounded-full flex justify-between items-center">
-            <p className="pl-6 text-black font-semibold py-[10px] text-xl">
+            <p className="pl-6 text-black font-semibold py-3 text-lg md:text-xl">
               ecell@aitpune.edu.in
             </p>
             <button
               onClick={() =>
                 (window.location.href = "mailto:ecell@aitpune.edu.in")
               }
-              className="flex gap-3 font-semibold bg-red-600 py-[10px] px-6 text-xl rounded-full"
+              className="flex gap-3 bg-red-600 py-3 px-6 text-xl rounded-full text-white font-semibold"
             >
               Mail Us
               <img src={Send} alt="email" />
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
 
         {/* venue */}
-        <div className="flex w-1/3 flex-col gap-10 justify-center items-center">
+        <div className="flex md:w-1/3 flex-col gap-10 justify-center items-center">
           <div className="font-['shakuro'] text-hover-btn text-4xl ">Venue</div>
           <iframe
             className="rounded-xl w-full h-full"

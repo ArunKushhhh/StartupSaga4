@@ -51,6 +51,7 @@ const HeroBg = () => {
           </div>
         </div>
       </div>
+</div>
     </div>
   );
 };
