@@ -14,103 +14,43 @@ import Birds from "../../public/images/birds.svg";
 const HeroBg = () => {
   return (
     <div className="relative inset-0 flex justify-between w-full mx-auto pointer-events-none">
-      <div
-        className="absolute top-[38%] left-1/2 -translate-x-1/2 border-4  w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]"
-      />
-      <img
-        src={Tree3}
-        alt="treeLayer3"
-        style={{
-          position: "absolute",
-          top: "60%",
-          width: "100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          objectFit: "fill",
-        }}
-        className="-translate-y-1/2"
-      />
-      <img
-        src={UmbTree}
-        alt="treeLayer3"
-        className="absolute left-3/4 top-1/2 -translate-y-1/2"
-      />
+      <div className="relative mx-auto w-full top-0">
+        <div className="absolute lg:top-[48%] top-[38%] left-1/2 -translate-x-1/2 border-4 w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]" />
 
-      <img
-        src={UmbTree2}
-        alt="treeLayer3"
-        className="absolute left-1/4 top-1/2 -translate-y-52"
-      />
+        <div className="absolute w-full bottom-0">
+          <div className="relative flex items-end justify-center w-full">
+            <img
+              src={Treefront1}
+              alt="treefront1"
+              className="hidden md:block w-[240px] max-w-[300px] absolute left-0 bottom-0"
+            />
 
-      <img
-        src={Tree2}
-        alt="treeLayer3"
-        style={{
-          position: "absolute",
-          top: "65%",
-          width: "100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          objectFit: "fill",
-        }}
-        className="-translate-y-1/2"
-      />
-      <img
-        src={Tree1}
-        alt="treeLayer3"
-        style={{
-          position: "absolute",
-          top: "72%",
-          width: "100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          objectFit: "fill",
-        }}
-        className="-translate-y-1/2"
-      />
+            <div className="relative flex flex-col items-center justify-center w-full">
+              <div className="relative -bottom-9">
+                <img src={Horses} alt="Horses" />
+              </div>
 
-      <img
-        src={Horses}
-        alt="Horses"
-        className="absolute left-1/2 -translate-x-1/2 bottom-64"
-      />
+              <img
+                src={Ground}
+                alt="ground"
+                className="w-full"
+                style={{
+                  bottom: "0%",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  objectFit: "fill",
+                }}
+              />
+            </div>
 
-      <img
-        src={Ground}
-        alt="ground"
-        style={{
-          position: "absolute",
-          bottom: "0%",
-          width: "100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          objectFit: "fill",
-        }}
-      />
-
-      <img
-        src={Treefront1}
-        alt="treefront1"
-        className="absolute hidden lg:flex left-0 top-1/2 -translate-y-1/2"
-      />
-
-      <img
-        src={Treefront2}
-        alt="treefront2"
-        className="absolute hidden lg:flex right-0 top-1/2 -translate-y-1/2"
-      />
-
-      <img
-        src={Dragon}
-        alt="Dragon"
-        className="absolute left-1/2 top-1/4 -translate-y-1/2"
-      />
-
-      <img
-        src={Birds}
-        alt="Dragon"
-        className="absolute left-1/3 top-1/3 -translate-x-1/4 -translate-y-1/2"
-      />
+            <img
+              src={Treefront2}
+              alt="treefront2"
+              className="hidden md:block w-[290px] max-w-[300px] absolute right-0 bottom-0"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
