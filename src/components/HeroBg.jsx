@@ -14,9 +14,7 @@ import Birds from "../../public/images/birds.svg";
 const HeroBg = () => {
   return (
     <div className="relative inset-0 flex justify-between w-full mx-auto pointer-events-none">
-      <div
-        className="absolute top-[38%] left-1/2 -translate-x-1/2 border-4  w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]"
-      />
+      <div className="absolute top-[38%] left-1/2 -translate-x-1/2 border-4  w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]" />
       <img
         src={Tree3}
         alt="treeLayer3"
@@ -74,7 +72,6 @@ const HeroBg = () => {
         alt="Horses"
         className="absolute left-1/2 -translate-x-1/2 bottom-64"
       />
-
       <img
         src={Ground}
         alt="ground"

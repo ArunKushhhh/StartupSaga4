@@ -11,7 +11,7 @@ const StatCard = ({ data, tag }) => {
             to={data}
             separator=","
             direction="up"
-            duration={2}
+            duration={1}
           />
         </p>
         <p className="text-8xl md:text-8xl">+</p>

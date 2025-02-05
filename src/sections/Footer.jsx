@@ -60,19 +60,19 @@ const Footer = () => {
           </div>
           {/* mail */}
           <div className="bg-white w-full rounded-full flex justify-between items-center">
-                    <p className="pl-6 text-black font-semibold py-3 text-lg md:text-xl">
-                      ecell@aitpune.edu.in
-                    </p>
-                    <button
-                      onClick={() =>
-                        (window.location.href = "mailto:ecell@aitpune.edu.in")
-                      }
-                      className="flex gap-3 bg-red-600 py-3 px-6 text-xl rounded-full text-white font-semibold"
-                    >
-                      Mail Us
-                      <img src={Send} alt="email" />
-                    </button>
-                  </div>
+            <p className="pl-6 text-black font-semibold py-3 text-lg md:text-xl">
+              ecell@aitpune.edu.in
+            </p>
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:ecell@aitpune.edu.in")
+              }
+              className="flex gap-3 bg-red-600 py-3 px-6 text-xl rounded-full text-white font-semibold"
+            >
+              Mail Us
+              <img src={Send} alt="email" />
+            </button>
+          </div>
         </div>
 
         {/* venue */}
