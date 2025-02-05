@@ -2,9 +2,11 @@ import React from "react";
 import NavBar from "../components/Navbar";
 import HeroBg from "../components/HeroBg";
 
+
 const Hero = () => {
   return (
     <>
+    
       <div className="bg-[#D693A2] min-h-[150vh] flex flex-col justify-center items-center relative overflow-hidden">
         <div className="w-full max-w-[80em] mx-auto relative flex flex-col items-center">
           <NavBar />

@@ -129,7 +129,7 @@ const ClickSpark = ({
   return (
     <canvas
       ref={canvasRef}
-      className="abolsute inset-0 pointer-events-none w-full h-full block select-none"
+      className="absolute inset-0 w-full h-full block "
       onClick={handleClick}
     />
   );
