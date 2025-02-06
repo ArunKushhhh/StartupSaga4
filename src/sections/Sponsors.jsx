@@ -10,7 +10,7 @@ import ApparelSponsors from "../components/ApparelSponsor";
 const Sponsors = () => {
   return (
     <div className="relative flex flex-col gap-24 justify-center items-center min-h-[100vh] my-52 py-44">
-      <div className="absolute top-0 left-0 w-full h-full -z-30">
+      <div className="absolute top-0 w-full h-full -z-30">
         <SponsorsBg />
       </div>
       <div className="flex flex-col gap-2 uppercase text-center font-['shakuro'] text-white">
