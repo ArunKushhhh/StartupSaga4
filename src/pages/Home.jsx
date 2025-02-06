@@ -6,6 +6,7 @@ import SponsorUs from "../sections/SponsorUs";
 import Footer from "../sections/Footer";
 import Faq from "../sections/Faq";
 import Timeline from "../sections/Timeline";
+import Sponsors from "../sections/Sponsors";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <Timeline />
       <Testimonials />
+      <Sponsors />
       <Faq />
       <SponsorUs />
       <Gallery />
