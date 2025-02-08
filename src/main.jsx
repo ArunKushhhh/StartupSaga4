@@ -4,6 +4,7 @@ import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route, Ro
 import App from "./App";
 import "./index.css";
 import Home from './pages/Home'
+import TestAnimaton from "./pages/testAnimaton";
 
 
 
@@ -11,7 +12,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route index={true} path="/" element={<Home />}/>
+      <Route index={true} path="/test" element={<TestAnimaton/>}/>
     </Route>
+    
   )
 )
 
