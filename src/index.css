@@ -9,6 +9,10 @@ body {
   background: linear-gradient(to bottom, #001223 33%, #04060C 100%);
 }
 
+.animated {
+  will-change: transform, opacity;
+}
+
 ::-webkit-scrollbar{
 display: none;
 }
@@ -17,6 +21,13 @@ display: none;
     @font-face {
         font-family: "shakuro";
         src: url("/public/fonts/Shakuro\ Brush\ Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: 'Kayooh';
+      src: url('/public/fonts/KayoohRegular-mLKyv.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
     }
 
     @font-face {

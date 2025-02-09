@@ -46,6 +46,12 @@
     grid-template-columns: repeat(7, 1fr);
     will-change: transform, filter;
     }
+
+    @media screen and (max-width: 748px)  {
+        .row {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
     
     .row__item {
     position: relative;

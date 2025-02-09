@@ -1,0 +1,95 @@
+/* Add these styles to your CSS file */
+.tubelight span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8em;
+    padding: 0 4px;
+    /* text-shadow: 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 10px #fff,
+                 0 0 1px #fff; */
+    display: inline-block;
+    animation: randomFlicker 6s infinite;
+  }
+  
+  .tubelight-subtitle span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 0 2px;
+    /* text-shadow: 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 10px #fff,
+                 0 0 1px #fff; */
+    display: inline-block;
+    mix-blend-mode: difference;
+    ;
+  }
+  
+  /* Random delays for each letter */
+  .tubelight span:nth-child(1) { animation-delay: 0.4s; }
+  .tubelight span:nth-child(2) { animation-delay: 2.1s; }
+  .tubelight span:nth-child(3) { animation-delay: 1.7s; }
+  .tubelight span:nth-child(4) { animation-delay: 0.9s; }
+  .tubelight span:nth-child(5) { animation-delay: 2.3s; }
+  .tubelight span:nth-child(6) { animation-delay: 1.2s; }
+  .tubelight span:nth-child(7) { animation-delay: 3.1s; }
+  .tubelight span:nth-child(8) { animation-delay: 0.7s; }
+  .tubelight span:nth-child(9) { animation-delay: 2.8s; }
+  .tubelight span:nth-child(10) { animation-delay: 1.4s; }
+  .tubelight span:nth-child(11) { animation-delay: 2.5s; }
+  
+  @keyframes randomFlicker {
+    0%, 100% {
+      color: #fff;
+      text-shadow: 0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 10px #fff,
+                   0 0 1px #fff;
+    }
+    15% {
+      color: #111;
+      text-shadow: none;
+    }
+    16% {
+      color: #fff;
+      text-shadow: 0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 10px #fff,
+                   0 0 1px #fff;
+    }
+    27% {
+      color: #111;
+      text-shadow: none;
+    }
+    28%, 45% {
+      color: #fff;
+      text-shadow: 0 0 20px #fff,
+                   0 0 30px #fff,
+                   0 0 10px #fff,
+                   0 0 1px #fff;
+    }
+    46% {
+      color: #111;
+      text-shadow: none;
+    }
+    47%, 100% {
+      color: #fff;
+      text-shadow: 0 0 20px rgba(255,255,255,0.5),
+                   0 0 30px rgba(255,255,255,0.5),
+                   0 0 10px rgba(255,255,255,0.5),
+                   0 0 1px rgba(255,255,255,0.5);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tubelight span {
+      font-size: 3em;
+      padding: 0 2px;
+    }
+    
+    .tubelight-subtitle span {
+      font-size: 1.5em;
+      padding: 0 1px;
+    }
+  }

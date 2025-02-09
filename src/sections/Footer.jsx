@@ -50,12 +50,12 @@ const Footer = () => {
           {/* contacts */}
           <div className="text-xl flex flex-col items-start w-full gap-6">
             <div className="flex flex-col gap-[6px]">
-              <p className="font-bold">Gulshan Singh(Secretary):</p>
-              <p>9064099186</p>
+              <p className="font-semibold">Arun Kumar Kushwaha (Joint Secretary):</p>
+              <p>+91 8619020789</p>
             </div>
             <div className="flex flex-col gap-[6px]">
-              <p className="font-bold">Tanishk Soam(Secretary):</p>
-              <p>9897283397</p>
+              <p className="font-semibold">Swarup Baidya (Joint Secretary):</p>
+              <p>+91 9330166052</p>
             </div>
           </div>
           {/* mail */}
