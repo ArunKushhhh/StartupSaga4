@@ -18,39 +18,36 @@ import "../styles/tubelight.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroBg = () => {
-  const heroRef = useRef(null);
-  
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: heroRef.current,
-        start: "top top",
-        end: "+=700", // Controls the zoom duration
-        scrub: 1.5,
-        pin: true, // Keeps HeroBg in place while animating
-      },
-    });
+  // const heroRef = useRef(null);
 
-    tl.to(heroRef.current, {
-      scale: 2.5, // Zoom in effect
-      duration: 3,
-      ease: "power2.out",
-    }).to(heroRef.current, {
-      opacity: 0, // Fade out effect
-      duration: 1.5,
-      ease: "power2.out",
-    });
+  // useEffect(() => {
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: heroRef.current,
+  //       start: "70% 50%",
+  //       end: "bottom top",
+  //       scrub: 0.2,
+  //       // pin: true,
+  //       markers: true,
+  //     },
+  //   });
 
-    return () => {
-      tl.kill(); // Clean up animation
-    };
-  }, []);
+  //   tl.to(heroRef.current, {
+  //     // scale: 1.5,
+  //     width: "110vw",
+  //     height: "110vw",
+  //     duration: 3,
+  //     ease: "power2.out",
+  //   });
+
+  //   // return () => {
+  //   //   tl.kill();
+  //   // };
+  // }, []);
+
   return (
-    <div
-      ref={heroRef}
-      className="animated relative inset-0 flex justify-between w-full mx-auto pointer-events-none"
-    >
-      <div className="absolute top-[6vw] left-1/2 -translate-x-1/2 z-10 text-center w-full">
+    <div className="animated relative inset-0 flex justify-between w-full mx-auto pointer-events-none">
+      <div className="absolute top-[10vw] left-1/2 -translate-x-1/2 z-10 text-center w-full">
         <h1 className="tubelight mb-4" style={{ fontFamily: "shakuro" }}>
           <span>S</span>
           <span>T</span>
@@ -116,6 +113,10 @@ const HeroBg = () => {
       </div>
       <div className="relative mx-auto w-full top-0">
         <div className="absolute top-1/2 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 border-4 w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]" />
+        {/* <div
+          ref={heroRef}
+          className="overlay w-0 h-0 bg-[#001223] rounded-full z-[100] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        /> */}
         <div className="absolute w-full bottom-0">
           <div className="relative flex items-end justify-center w-full">
             <div className="absolute scale-[1.8] md:scale-100 bottom-40 md:bottom-64 w-full">
@@ -187,7 +188,7 @@ const HeroBg = () => {
         <img
           src={Dragon}
           alt="dragon"
-          className="absolute left-1/2 w-44 top-1/4 md:w-auto "
+          className="absolute left-1/2 w-44 top-1/4 md:w-auto -z-20"
         />
         <img
           src={Birds}

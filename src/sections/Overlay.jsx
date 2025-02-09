@@ -12,7 +12,7 @@ const Overlay = () => {
 
   const currentEvent = eventData[currentPage - 1];
   return (
-    <div className="relative h-[65vh] w-[55vw] bg-red-400 overflow-hidden group">
+    <div className="relative h-[40vh] w-[90vw] md:h-[65vh] md:w-[55vw] bg-red-400 overflow-hidden group">
       <div
         className="w-full h-full group-hover:scale-105 transition duration-400"
         style={{

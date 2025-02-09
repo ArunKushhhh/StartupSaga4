@@ -7,8 +7,6 @@ import Next from "../../public/images/nextniche.jpg";
 
 const items = [
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
-  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
-  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
@@ -26,6 +24,10 @@ const items = [
   <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Shark} alt="meet1" className="h-full w-full object-fill" />,
+  <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
   <img src={Next} alt="meet1" className="h-full w-full object-fill" />,
 ];
 
@@ -36,7 +38,7 @@ const Gallery = () => {
         <GridMotion items={items} />
       </div>
 
-      <div className="relative z-10 flex flex-col gap-40 justify-center items-center">
+      <div className="relative z-10 flex flex-col gap-72 md:gap-40 justify-center items-center">
         <div className="uppercase text-center text-6xl md:text-9xl font-['shakuro'] text-white">
           Memories
         </div>

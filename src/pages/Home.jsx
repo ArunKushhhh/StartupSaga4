@@ -1,4 +1,4 @@
-import  { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Hero from "../sections/Hero";
 import Testimonials from "../sections/Testimonials";
 import Gallery from "./Gallery";
@@ -7,6 +7,7 @@ import Footer from "../sections/Footer";
 import Faq from "../sections/Faq";
 import Timeline from "../sections/Timeline";
 import Sponsors from "../sections/Sponsors";
+import NavBar from "../components/Navbar";
 import { gsap } from "gsap";
 
 const Home = () => {
@@ -24,10 +25,13 @@ const Home = () => {
 
   return (
     <div className="flex flex-col gap-[150px]">
-      <Hero />
-      <div ref={timelineRef} className="timeline-wrapper opacity-0 translate-y-20">
-        <Timeline />
+      <div className="bg-[#D693A2] absolute inset-0">
+        <div className="w-full max-w-[80em] mx-auto relative flex flex-col items-center">
+          <NavBar />
+        </div>
       </div>
+      <Hero />
+      <Timeline />
       <Testimonials />
       <Sponsors />
       <Faq />
