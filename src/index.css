@@ -20,7 +20,7 @@ display: none;
 @layer base {
     @font-face {
         font-family: "shakuro";
-        src: url("./public/fonts/Shakuro\ Brush\ Regular.ttf") format("truetype");
+        src: url("./fonts/Shakuro\ Brush\ Regular.ttf") format("truetype");
     }
 
     @font-face {
