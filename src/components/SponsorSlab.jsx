@@ -3,7 +3,7 @@ import Slab from "/images/Slab.svg";
 
 const SponsorSlab = ({ sponsorImage, logoWidth = "w-1/2" }) => {
   return (
-    <div className="relative md:w-auto">
+    <div className="relative w-[95%] md:w-auto flex justify-center items-center">
       <img src={Slab} alt="slab" />
       <img 
         src={sponsorImage} 
