@@ -1,5 +1,5 @@
 import React from "react";
-import Fansvg from "../../public/images/Fan.svg";
+import Fansvg from "/images/Fan.svg";
 
 const Fan = () => {
   return (

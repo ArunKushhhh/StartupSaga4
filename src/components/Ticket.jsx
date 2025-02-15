@@ -1,5 +1,5 @@
 import React from "react";
-import Castle from "../../public/images/castle.svg";
+import Castle from "/images/castle.svg";
 import Form from "./Form";
 
 const Ticket = () => {

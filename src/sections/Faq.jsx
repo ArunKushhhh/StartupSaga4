@@ -1,7 +1,7 @@
 // import React from 'react';
 import Questions from "../components/Questions";
 import Content from "../components/Content";
-import Send from "../../public/images/send-email.svg";
+import Send from "/images/send-email.svg";
 
 const Faq = () => {
   return (

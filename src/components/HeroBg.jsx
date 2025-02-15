@@ -1,53 +1,21 @@
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Tree3 from "../../public/images/treelayer3.svg";
-import UmbTree from "../../public/images/umbrellatree.svg";
-import UmbTree2 from "../../public/images/umbrellatree2.svg";
-import Tree2 from "../../public/images/treelayer2.svg";
-import Tree1 from "../../public/images/treelayer1.svg";
-import Horses from "../../public/images/horses.svg";
-import Ground from "../../public/images/ground.svg";
-import Treefront1 from "../../public/images/trre1.svg";
-import Devfolio from "../../public/images/devfolio.svg";
-import Treefront2 from "../../public/images/tree2.svg";
-import Dragon from "../../public/images/dragon.svg";
-import Birds from "../../public/images/birds.svg";
+import Tree3 from "/images/treelayer3.svg";
+import UmbTree from "/images/umbrellatree.svg";
+import UmbTree2 from "/images/umbrellatree2.svg";
+import Tree2 from "/images/treelayer2.svg";
+import Tree1 from "/images/treelayer1.svg";
+import Horses from "/images/horses.svg";
+import Ground from "/images/ground.svg";
+import Treefront1 from "/images/trre1.svg";
+import Devfolio from "/images/devfolio.svg";
+import Treefront2 from "/images/tree2.svg";
+import Dragon from "/images/dragon.svg";
+import Birds from "/images/birds.svg";
 import "../styles/tubelight.css";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const HeroBg = () => {
-  // const heroRef = useRef(null);
-
-  // useEffect(() => {
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: heroRef.current,
-  //       start: "70% 50%",
-  //       end: "bottom top",
-  //       scrub: 0.2,
-  //       // pin: true,
-  //       markers: true,
-  //     },
-  //   });
-
-  //   tl.to(heroRef.current, {
-  //     // scale: 1.5,
-  //     width: "110vw",
-  //     height: "110vw",
-  //     duration: 3,
-  //     ease: "power2.out",
-  //   });
-
-  //   // return () => {
-  //   //   tl.kill();
-  //   // };
-  // }, []);
-
   return (
     <div className="animated relative inset-0 flex justify-between w-full mx-auto pointer-events-none">
-      <div className="absolute top-[10vw] left-1/2 -translate-x-1/2 z-10 text-center w-full">
+      <div className="absolute top-[30vw] lg:top-[10vw] left-1/2 -translate-x-1/2 z-10 text-center w-full">
         <h1 className="tubelight mb-4" style={{ fontFamily: "shakuro" }}>
           <span>S</span>
           <span>T</span>
@@ -100,16 +68,7 @@ const HeroBg = () => {
           <span>T</span>
           <span>Y</span>
         </h2>
-        <button
-          type="button"
-          className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-7 py-2.5 text-center me-2 mb-2 dark:bg-red-800 dark:hover:bg-red-700 dark:focus:ring-red-900 relative top-[15vh]"
-          style={{ fontFamily: "shakuro" }}
-        >
-          <div className="flex gap-2">
-            <img src={Devfolio} className="w-5 h-5" />
-            Register With Devfolio
-          </div>
-        </button>
+        
       </div>
       <div className="relative mx-auto w-full top-0">
         <div className="absolute top-1/2 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/3 border-4 w-[200px] h-[200px] rounded-full shadow-[0_0_4px_4px_rgba(255,255,255,0.25)]" />

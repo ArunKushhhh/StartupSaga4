@@ -24,20 +24,13 @@ display: none;
     }
 
     @font-face {
-      font-family: 'Kayooh';
-      src: url('/public/fonts/KayoohRegular-mLKyv.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
         font-family: "helvetica-md";
-        src: url("/public/fonts/Helvetica\ CE\ Medium.otf") format("opentype");
+        src: url("/fonts/Helvetica\ CE\ Medium.otf") format("opentype");
     }
 
     @font-face {
       font-family: "inter";
-      src: url("/public/fonts/Inter-ExtraBold.ttf") format("truetype");
+      src: url("/fonts/Inter-ExtraBold.ttf") format("truetype");
   }
 }
 

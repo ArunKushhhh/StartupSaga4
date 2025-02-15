@@ -1,14 +1,14 @@
 import React from "react";
 import Button from "../components/Button";
 import SpotlightText from "../components/SpotlightText";
-import Send from "../../public/images/send-email.svg";
+import Send from "/images/send-email.svg";
 
 const footerItems = ["Prizes", "Timeline", "FAQs", "Testimonials", "Contact"];
 const links = ["Instagram", "Facebook", "Twitter", "LinkedIn"];
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-24 justify-start items-center">
+    <div className="flex flex-col gap-24 justify-start items-center w-full">
       {/* Navigation menu */}
       <div className="flex justify-between md:items-center w-full px-4 md:px-16 mt-32">
         <div className="flex gap-6 h-full items-center">

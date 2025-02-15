@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-
+import Logo from "/images/logo.svg"
 import Button from "./Button";
 
 const navItems = ["Prizes", "Timeline", "FAQs", "Testimonials", "Contact"];
@@ -45,13 +45,13 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed w-[94%] md:w-[98%] top-4 z-50 py-6 md:px-12 px-4 transition-all duration-700 rounded-lg  max-w-[80em]"
+      className="fixed w-full md:w-[80%] top-4 z-50 py-6 md:px-12 px-4 transition-all duration-700 rounded-lg"
     >
       <header className="w-full ">
         <nav className="flex items-center justify-between">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/logo.svg" alt="logo" />
+            <img src={Logo} alt="logo" />
 
             <Button
               id="product-button"
@@ -63,7 +63,7 @@ const NavBar = () => {
 
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               {navItems.map((item, index) => (
                 <a
                   key={index}

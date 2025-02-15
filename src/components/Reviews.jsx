@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../../public/images/review.svg";
+import Star from "/images/review.svg";
 
 const Reviews = () => {
   return (
