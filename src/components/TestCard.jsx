@@ -1,5 +1,5 @@
 import React from "react";
-import Spark from "../../public/images/arc-reactor.svg";
+import Spark from "/images/arc-reactor.svg";
 import Reviews from "./Reviews";
 
 const TestCard = ({ content, person, designation }) => {

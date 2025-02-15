@@ -1,9 +1,9 @@
 import React from "react";
 import GridMotion from "../sections/GridMotion";
 import Overlay from "../sections/Overlay";
-import Meet1 from "../../public/images/ecellMeet1.jpg";
-import Shark from "../../public/images/sharktank.jpg";
-import Next from "../../public/images/nextniche.jpg";
+import Meet1 from "/images/ecellMeet1.jpg";
+import Shark from "/images/sharktank.jpg";
+import Next from "/images/nextniche.jpg";
 
 const items = [
   <img src={Meet1} alt="meet1" className="h-full w-full object-fill" />,
@@ -33,7 +33,7 @@ const items = [
 
 const Gallery = () => {
   return (
-    <div className="relative min-h-[100vh] overflow-hidden">
+    <div className="relative min-h-[100vh] overflow-hidden w-full">
       <div className="absolute z-0 top-1/4 translate-y-0 opacity-20">
         <GridMotion items={items} />
       </div>

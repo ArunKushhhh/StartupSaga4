@@ -1,9 +1,9 @@
 import React from "react";
-import Slab from "../../public/images/Slab.svg";
+import Slab from "/images/Slab.svg";
 
 const SponsorSlab = ({ sponsorImage, logoWidth = "w-1/2" }) => {
   return (
-    <div className="relative w-[95%] md:w-auto">
+    <div className="relative md:w-auto">
       <img src={Slab} alt="slab" />
       <img 
         src={sponsorImage} 
