@@ -6,7 +6,7 @@ import ClickSpark from "../components/ClickSpark";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col gap-24 justify-center items-center min-h-[100vh] ">
+    <div className="flex w-full flex-col gap-24 justify-center items-center min-h-[100vh] ">
       <div className="uppercase text-center text-6xl md:text-9xl font-['shakuro'] text-white">
         testimonials
       </div>
