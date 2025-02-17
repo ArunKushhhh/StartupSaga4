@@ -26,7 +26,7 @@ const Content = () => {
         <div className="w-[100%] flex flex-col items-center gap-4">
           {" "}
           {/* Changed to items-start */}
-          <h1 className="uppercase text-center text-6xl md:text-9xl font-['shakuro'] text-white">
+          <h1 className="uppercase text-center text-5xl md:text-6xl lg:text-9xl font-['shakuro'] text-white">
             FAQs
           </h1>
           <p className="font-normal text-[16px] text-white text-center">

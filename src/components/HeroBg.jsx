@@ -6,7 +6,6 @@ import Tree1 from "/images/treelayer1.svg";
 import Horses from "/images/horses.svg";
 import Ground from "/images/ground.svg";
 import Treefront1 from "/images/trre1.svg";
-import Devfolio from "/images/devfolio.svg";
 import Treefront2 from "/images/tree2.svg";
 import Dragon from "/images/dragon.svg";
 import Birds from "/images/birds.svg";
