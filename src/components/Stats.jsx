@@ -4,7 +4,7 @@ import Stroke from "./Stroke";
 
 const Stats = () => {
   return (
-    <div className="flex w-full flex-col justify-between md:flex-row gap-16 md:w-[80%] ">
+    <div className="flex w-full flex-col justify-between md:flex-row gap-8 md:gap-16 md:w-[80%] ">
       <StatCard data={"3000"} tag={"Attendees"} />
       <div className="md:hidden">
         {/* <Stroke /> */}
