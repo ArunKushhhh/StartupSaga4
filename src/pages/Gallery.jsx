@@ -39,7 +39,7 @@ const Gallery = () => {
       </div>
 
       <div className="relative z-10 flex flex-col gap-72 md:gap-40 justify-center items-center">
-        <div className="uppercase text-center text-6xl md:text-9xl font-['shakuro'] text-white">
+        <div className="uppercase text-center text-5xl md:text-6xl lg:text-9xl font-['shakuro'] text-white">
           Memories
         </div>
         <Overlay />

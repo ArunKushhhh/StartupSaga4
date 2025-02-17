@@ -8,7 +8,7 @@ const apparelSponsors = [
 const ApparelSponsors = () => {
   return (
     <div className="flex w-full flex-col gap-8 justify-center items-center">
-      <div className="text-3xl md:text-6xl font-['shakuro'] text-white uppercase">
+      <div className="text-2xl md:text-5xl font-['shakuro'] text-white uppercase">
         Apparel sponsors
       </div>
       <div className="flex flex-wrap justify-center items-center gap-10 md:gap-36 w-full">

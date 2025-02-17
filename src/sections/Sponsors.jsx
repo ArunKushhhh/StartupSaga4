@@ -25,8 +25,8 @@ const Sponsors = () => {
         <img src={Clouds} alt="" className="w-full -translate-y-[99%]"/>
       </div>
       <div className="flex flex-col gap-2 uppercase text-center font-['shakuro'] text-white">
-        <p className="text-2xl md:text-4xl">Our Past</p>
-        <p className="text-6xl md:text-9xl ">Sponsors</p>
+        <p className="text-2xl md:text-3xl lg:text-4xl">Our Past</p>
+        <p className="text-5xl md:text-6xl lg:text-9xl ">Sponsors</p>
       </div>
 
       <div className="w-full flex flex-col gap-36 justify-center items-center">
