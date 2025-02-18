@@ -12,7 +12,7 @@ import CloudsB from "/images/cloudsbottom.svg";
 const Sponsors = () => {
   const bgUrl = new URL('/images/bgpattern.svg', import.meta.url).href;
   return (
-    <div
+    <div id="sponsors"
       className="relative overflow-x-clip flex flex-col gap-24 justify-center items-center w-full min-h-[100vh] my-8 md:my-32 lg:my-52 py-8 md:py-32"
       style={{
         backgroundImage: `url(${bgUrl})`,

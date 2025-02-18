@@ -1,14 +1,48 @@
 import React from "react";
-import Button from "../components/Button";
 import SpotlightText from "../components/SpotlightText";
 import Send from "/images/send-email.svg";
 
-const footerItems = ["Prizes", "Timeline", "FAQs", "Testimonials", "Contact"];
-const links = ["Instagram", "Facebook", "Twitter", "LinkedIn"];
+const footerItems = [
+  "Hero",
+  "Timeline",
+  "Testimonials",
+  "Sponsors",
+  "FAQs",
+  "Sponsor Us",
+];
+const links = {
+  Instagram: "https://www.instagram.com/ecell_ait/",
+  Facebook: "https://www.facebook.com/ecellait/",
+  Twitter: "https://x.com/ecell_aitpune",
+  LinkedIn: "https://www.linkedin.com/company/innovation-entrepreneurship-cell/",
+};
 
 const Footer = () => {
+  // Handle smooth scrolling
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offsetPosition = element.offsetTop - 100; // Added offset for navbar
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Handle nav item click
+  const handleNavClick = (e, item) => {
+    e.preventDefault();
+    const sectionId = item.toLowerCase().replace(/\s+/g, "-");
+    scrollToSection(sectionId);
+  };
+
   return (
-    <div className="flex flex-col gap-24 justify-start items-center w-full">
+    <div
+      id="contact"
+      className="flex flex-col gap-24 justify-start items-center w-full"
+    >
       {/* Navigation menu */}
       <div className="flex justify-between md:items-center w-full px-4 md:px-16 mt-32">
         <div className="flex gap-6 h-full items-center">
@@ -16,8 +50,9 @@ const Footer = () => {
             {footerItems.map((item, index) => (
               <a
                 key={index}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
                 className="nav-hover-btn"
+                onClick={(e) => handleNavClick(e, item)}
               >
                 {item}
               </a>
@@ -26,13 +61,15 @@ const Footer = () => {
         </div>
         <div className="flex gap-6 h-full items-center">
           <div className="flex flex-col md:flex-row gap-6">
-            {links.map((item, index) => (
+            {Object.entries(links).map(([platform, url]) => (
               <a
-                key={index}
-                href={`#${item.toLowerCase()}`}
+                key={platform}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="nav2-hover-btn"
               >
-                {item}
+                {platform}
               </a>
             ))}
           </div>
@@ -50,24 +87,26 @@ const Footer = () => {
           {/* contacts */}
           <div className="text-xl flex flex-col items-start w-full gap-6">
             <div className="flex flex-col gap-[6px]">
-              <p className="font-semibold">Arun Kumar Kushwaha (Joint Secretary):</p>
-              <p>+91 8619020789</p>
+              <p className="text-[0.9em] md:text-[1.2em] font-semibold">
+                Arun Kumar Kushwaha (Joint Secretary):
+              </p>
+              <p className="text-[14px] md:text-[16px]">+91 8619020789</p>
             </div>
             <div className="flex flex-col gap-[6px]">
-              <p className="font-semibold">Swarup Baidya (Joint Secretary):</p>
-              <p>+91 9330166052</p>
+              <p className="text-[0.9em] md:text-[1.2em] font-semibold">Swarup Baidya (Joint Secretary):</p>
+              <p className="text-[14px] md:text-[16px]">+91 9330166052</p>
             </div>
           </div>
           {/* mail */}
           <div className="bg-white w-full rounded-full flex justify-between items-center">
-            <p className="pl-6 text-black font-semibold py-3 text-lg md:text-xl">
+            <p className="pl-6 text-black font-semibold py-3 text-sm md:text-xl">
               ecell@aitpune.edu.in
             </p>
             <button
               onClick={() =>
                 (window.location.href = "mailto:ecell@aitpune.edu.in")
               }
-              className="flex gap-3 bg-red-600 py-3 px-6 text-xl rounded-full text-white font-semibold"
+              className="flex items-center gap-3 bg-red-600 py-3 px-6 text-sm md:text-xl rounded-full text-white font-semibold"
             >
               Mail Us
               <img src={Send} alt="email" />

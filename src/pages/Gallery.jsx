@@ -33,7 +33,7 @@ const items = [
 
 const Gallery = () => {
   return (
-    <div className="relative min-h-[100vh] overflow-hidden w-full">
+    <div id="memories" className="relative min-h-[100vh] overflow-hidden w-full">
       <div className="absolute z-0 top-1/4 translate-y-0 opacity-20">
         <GridMotion items={items} />
       </div>
