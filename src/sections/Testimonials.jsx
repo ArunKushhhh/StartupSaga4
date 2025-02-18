@@ -5,7 +5,7 @@ import Stats from "../components/Stats";
 
 const Testimonials = () => {
   return (
-    <div className="flex w-full flex-col gap-24 justify-center items-center min-h-[100vh] ">
+    <div id="testimonials" className="flex w-full flex-col gap-24 justify-center items-center min-h-[100vh] ">
       <div className="uppercase text-center text-5xl md:text-6xl lg:text-9xl font-['shakuro'] text-white">
         testimonials
       </div>

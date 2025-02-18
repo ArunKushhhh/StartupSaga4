@@ -68,6 +68,7 @@ const Hero = () => {
     <>
       {/* Hero Section */}
       <section
+        id="hero"
         ref={heroRef}
         className="relative h-screen w-full overflow-hidden"
       >

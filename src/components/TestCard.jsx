@@ -4,7 +4,7 @@ import Reviews from "./Reviews";
 
 const TestCard = ({ content, person, designation }) => {
   return (
-    <div className="flex flex-col gap-14 justify-center items-center text-xl ">
+    <div className="flex flex-col gap-14 justify-center items-center text-[0.9em] md:text-[1.2em] ">
       <div className="border-4 border-[#D693A2] rounded-full p-2">
         <img src={Spark} alt="spark" />
       </div>
