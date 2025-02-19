@@ -9,6 +9,7 @@ import Faq from "./Faq";
 import SponsorUs from "./SponsorUs";
 import Gallery from "../pages/Gallery";
 import Footer from "./Footer";
+import CountdownTimer from "../components/Countdown";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +88,8 @@ const Hero = () => {
       </section>
 
       {/* Rest of the content outside the hero section */}
-      <div className="mt-[150px] flex flex-col justify-center items-center gap-[150px] bg-[#001223] w-full">
+      <div className="mt-12 flex flex-col justify-center items-center gap-[150px] bg-[#001223] w-full">
+        <CountdownTimer/>
         <Timeline />
         <Testimonials />
         <Sponsors />
