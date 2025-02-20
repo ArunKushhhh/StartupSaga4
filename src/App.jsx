@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 const App = () => {
   return (
     <main>
-      <div className="hidden lg:block">
+      <div className="hidden sm:block">
         <AnimatedCursor
           innerSize={8}
           outerSize={35}

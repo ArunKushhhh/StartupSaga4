@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Hero from "../sections/Hero";
 import NavBar from "../components/Navbar";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 const Home = () => {
   const lenisRef = useRef(null);
